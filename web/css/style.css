@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none !important;
+color: black !important;
+}
+i{
+    margin-right: 5px;
+}
+ul{
+  padding-left: 0 !important;
+}
+
+button{
+    margin-left: 5px !important;
+  padding:  0.375rem 0.75rem ;
+    border: 1px solid #198754;
+    border-radius: 0.375rem !important;
+ color: #198754;
+ background: transparent;
+ 
+    font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+}
+.mainnav {
+  position: sticky;
+  top: 0;
+z-index: 99;
+}
+.part1 a,
+.part2 a{
+  /* margin-left: 5px !important; */
+  padding:  0.375rem 0.75rem ;
+    border: 1px solid #198754;
+    border-radius: 0.375rem !important;
+ color: #198754;
+ background: transparent;
+ 
+    font-size: 10px;
+   font-weight: 400;
+   line-height: 1.5;
+}
+
+.hiddennav{
+  padding: 20px;
+    height: 50vh;
+    width: 200px;
+    background-color: antiquewhite;
+    position: fixed;
+ right: -350px;
+ top: 0;
+ transition: 0.3s;
+ line-height: 4;
+ z-index: 9;
+}
+.ourproducts{
+  padding: 20px;
+    height: 100vh;
+    width: 300px;
+    background-color: antiquewhite;
+    position: fixed;
+ right: -350px;
+ top: 0;
+ transition: 0.3s;
+ line-height: 3;
+ z-index: 9;
+}
+
+
+/* cards slider */
+.upperdiv .card{
+background-color: aliceblue;
+}
+
+
+#carouselExample .card,
+#carouselExamplehidden .card,
+.part2 .card{
+  background-color: antiquewhite;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .card {
+    margin: 0 0.5em;
+   
+    border: none;
+    border-radius: 0;
+  }
+  
+  #carousel-control-prev,
+#carousel-control-next {
+  background-color: antiquewhite;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.threeimges{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+.threeimges img{
+    width: 30vmax;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.parent{
+  margin: 0 30px;
+  padding: 30px 0;
+}
+.headingofsection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contentdivofsection{
+ 
+  background-color: rgb(238, 234, 234);
+  padding: 20px;
+ /* margin: 20px; */
+}
+#carouselExamplehidden a, #carouselExample a{
+  padding:  0.375rem 0.75rem ;
+    border: 1px solid #198754;
+    border-radius: 0.375rem !important;
+ color: #198754;
+ background: transparent;
+    font-size: 10px;
+   font-weight: 400;
+   line-height: 1.5;
+   font-size: 1rem;
+}
+#carouselExamplehidden{
+  display: none;
+}
+
+.lowerdiv{
+  display: flex;
+width: 100%;
+background-color: #fff;
+margin: 50px 0;
+align-items: center;
+justify-content: space-evenly;
+}
+.lowerdiv div{
+  margin: 10px;
+}
+.lowerdiv p{
+  text-align: center;
+}
+.lowerdiv img{
+  border: 2px solid gray;
+  border-radius: 50%;
+}
+.upperdiv{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.mainfooter{
+  margin: 0 30px;
+  background-color: rgb(251, 244, 236);
+}
+.upperfooter{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+@media(max-width:767px){
+ 
+
+
+  .part1 a, .part2 a{
+    font-size: 1rem;
+  }
+  .lowerdiv, .upperdiv, .threeimges, .upperfooter{
+    flex-direction: column;
+  }
+  .headingofsection,  #carouselExamplehidden{
+    display: block;
+  }
+ .leftdiv4 ,.leftdiv3, .leftdiv2, .leftdiv1{
+width: 100%;
+  }
+  .leftdiv3{
+    margin-bottom: 10px;
+  }
+  hr{
+    margin: 10px 0 !important;
+  }
+
+  .card{
+    width: 60vmin !important;
+    margin-bottom: 10px;
+  }
+  .threeimges img{
+    width: 100%;
+    margin: 20px 0;
+  }
+ .part2,  .banners .threeimges ,  #carouselExample{
+    display: none;
+  }
+  .lowerdiv{
+    margin-bottom:20px ;
+  }
+ 
+}
+@media(min-width:992px) {
+   
+#menuicon, .hiddennav{
+    display: none;
+}
+.part1 a, .part2 a{
+  font-size: 1rem;
+}
+}
+
+@media(min-width:1420px){
+  .part1{
+    position: relative;
+  }
+  .lowerdiv{
+    position: absolute;
+   justify-content: left;
+  }
+  .upperdiv{
+    z-index: 9;
+
+float: right;
+  }
+  #carouselExampleAutoplaying img{
+    height: 600px;
+    /* object-fit: cover; */
+  }
+
+}
