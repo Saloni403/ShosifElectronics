@@ -8,6 +8,7 @@ let closinglist=document.querySelector("#closinglist")
 
 menushow.addEventListener("click",function(){
     menu.style.right="0"
+     ourproducts.style.right="-350px"
 })
 closing.addEventListener("click",function(){
     menu.style.right="-350px"
@@ -16,6 +17,7 @@ closing.addEventListener("click",function(){
 
 Productlistbtn.addEventListener("click",function(){
     ourproducts.style.right="0"
+     menu.style.right="-350px"
 })
 closinglist.addEventListener("click",function(){
     ourproducts.style.right="-350px"

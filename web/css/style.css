@@ -32,7 +32,7 @@ button{
 .mainnav {
   position: sticky;
   top: 0;
-z-index: 99;
+z-index: 9;
 }
 .part1 a,
 .part2 a{
@@ -52,25 +52,33 @@ z-index: 99;
   padding: 20px;
     height: 50vh;
     width: 200px;
-    background-color: antiquewhite;
+    background: rgba(245, 72, 72, 0.8);
+            backdrop-filter: blur(10px);
+           
+    /* background-color: antiquewhite; */
     position: fixed;
  right: -350px;
  top: 0;
  transition: 0.3s;
  line-height: 4;
  z-index: 9;
+ 
 }
 .ourproducts{
   padding: 20px;
     height: 100vh;
     width: 300px;
-    background-color: antiquewhite;
+    background: rgba(245, 72, 72, 0.8);
+    backdrop-filter: blur(10px);
+    
+    /* background-color: antiquewhite; */
     position: fixed;
  right: -350px;
  top: 0;
  transition: 0.3s;
  line-height: 3;
  z-index: 9;
+
 }
 
 
